@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Image Gallery</h1>
+        <div id="gallery">
+            <img src="/gallery/images/img01.jpg" alt="1">
+            <img src="/gallery/images/img02.jpg" alt="2">
+            <img src="/gallery/images/img03.jpg" alt="3">
+        </div>
+        <!-- <button 
+        class="nextBtn btn"
+        onclick="img_move()"
+        >
+        다음 이미지</button> -->
+        <button 
+            class="nexT btn" 
+            onclick="img_move_nexT()"
+            >
+            next&gt;
+        </button>
+        <button 
+            class="preV btn"
+            onclick="img_move_preV()"
+            >
+            &lt;prev
+        </button>
+    </div> <!--container-->
+    
+    <script>
+        function img_move_nexT() {
+            $('#gallery img:first').appendTo("#gallery");
+        };
+        function img_move_preV() {
+            $('#gallery img:last').prependTo('#gallery');
+        }
+    </script>
+
+    <!-- 
+        # 향후 업그레이드
+        next, prev 버튼으로 이미지 전환
+     -->
+
+
+</body>
+</html>

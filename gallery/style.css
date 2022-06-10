@@ -1,0 +1,45 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+body {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    margin-bottom: 1em;
+}
+.container {
+    width: 800px;
+    /* outline: 3px solid red; */
+    position: relative;
+}
+#gallery {
+    width: 800px;
+    height: 400px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+.btn {
+    border: none;
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 18px 10px;
+    border-radius: 15px;
+    margin-top: 1em;
+}
+.nexT {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+}
+.preV {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+}
